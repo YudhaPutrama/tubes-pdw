@@ -3,8 +3,8 @@
 
 ## Author
 - [Kurniawan Yudha Putrama](yudhaputrama.xyz) (6706161060) as Team Leader
-- [Tri Retno Wulandari]() () as Team Member
-- [Tio Ahmad Muluk]() () as Team Member
+- [Tri Retno Wulandari]() (6706164056) as Team Member
+- [Tio Ahmad Muluk]() (6706160068) as Team Member
 
 ## Todo List
 + [Common file]() - Yudha Putrama
