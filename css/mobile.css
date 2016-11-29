@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/*general*/
 html, body, nav, header, section, aside, footer, div, h1, h2, h3{
     margin: 0;
     padding: 0;
@@ -9,7 +8,6 @@ html, body, nav, header, section, aside, footer, div, h1, h2, h3{
     
 }
 
-/*color*/
 .bg-red {
     background-color: #AA3939;
 }
@@ -21,11 +19,6 @@ html, body, nav, header, section, aside, footer, div, h1, h2, h3{
     background-color: #f3f3f3;
 }
 
-/*navigation*/
-.nav {
-    position: absolute;
-    width: 100%;
-}
 
 .bottom-nav ol,ul {
     list-style: none;
@@ -103,7 +96,7 @@ html, body, nav, header, section, aside, footer, div, h1, h2, h3{
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu on hover */
-li.nav-lang:hover .dropdown-content {
+.nav-lang:hover .dropdown-content {
     display: block;
 }
 
@@ -121,7 +114,8 @@ li.nav-lang:hover .dropdown-content {
 
 .logo{
     float: left;
-    margin: 10px 50px;
+    margin: 10px;
+    margin-left: 50px;
 }
 
 .nav-list {
@@ -417,4 +411,7 @@ footer {
   animation-name: fadeInUp;
 }
 
-
+.nav {
+    position: absolute;
+    width: 100%;
+}
