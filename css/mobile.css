@@ -118,11 +118,18 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    transit0ion: 1s;
+    transition: 1s;
 }
 
 .wrap-header {
     padding-top: 150px;
+}
+
+@media (min-width:1000px){
+    .wrap-header {
+        width: 1000px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width:1000px){

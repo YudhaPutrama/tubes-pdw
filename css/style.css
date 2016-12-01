@@ -49,7 +49,8 @@ html, body, nav, header, section, aside, footer, div, h1, h2, h3{
     padding: 13px 16px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
+    
     border-bottom: 5px;
 }
 
@@ -138,10 +139,20 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     transition: 1s;
+    animation-name: headerslide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .wrap-header {
     padding-top: 150px;
+}
+@media (min-width:1000px){
+    .wrap-header {
+        width: 1000px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width:1000px){
@@ -157,14 +168,26 @@ header {
     text-align: center;
 }
 
-.search {
-    height: 40px;
-    width: 550px;
-    margin: 120px auto;
-    border-radius: 25px;
-    background: #ffffff;
-    text-align: left;
+    .search {
+        height: 40px;
+        width: 50%;
+        margin: 120px 0px;
+        border-radius: 25px;
+        background: #ffffff;
+        text-align: left;
+    }    
+
+@media (min-width:1000px){
+    .search {
+        height: 40px;
+        width: 50%;
+        margin: 120px auto;
+        border-radius: 25px;
+        background: #ffffff;
+        text-align: left;
+    }    
 }
+
 
 .search-input {
     
@@ -343,7 +366,7 @@ footer {
 
 
 .dest-box-mid {
-    height: 240px;
+    padding-top: 75%;
     background-color: #e0e0e0;
     margin: 10px;
     position: relative;
@@ -355,7 +378,7 @@ footer {
 }
 
 .desc {
-    bottom: -60px;
+    bottom: -100%;
     position: absolute;
     box-sizing: border-box;
     width: 100%;
@@ -366,7 +389,7 @@ footer {
 }
 
 .dest-box-mid:hover .desc {
-    bottom: 0px;
+    bottom: 0%;
     transition: .5s;
 }
 
@@ -433,3 +456,18 @@ footer {
 
 
 
+@keyframes headerslide {
+    0%{
+        background-image: url(../img/heading.jpg);
+    }
+    50%{
+        background-image: url(../img/heading.jpg);
+    }
+    100%{
+        background-image: url(../img/heading2.jpg);
+    }
+}
+.copy {
+    color: white;
+    font-family: "Roboto";
+}

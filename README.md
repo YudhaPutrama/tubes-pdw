@@ -76,3 +76,16 @@ body{
 - [guideguide.me](guideguide.me)
 
 #### Dokumentasi lebih [disini](/doc)
+
+
+### User Story
+-> Homepage
+-> Search
+-> Detail
+-> Transportation and Acomodation
+-> Register / Login
+-> Userdata
+-> Payment
+-> 
+
+http://www.w3schools.com/howto/howto_js_topnav.asp
