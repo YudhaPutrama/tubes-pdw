@@ -85,7 +85,7 @@ li.nav-lang:hover .dropdown-content {
 .bottom-nav {
     height: 60px;
 /*    background: #E6E6E6;*/
-    padding: 20xp;
+    /*padding: 20 px;*/
     background-color: rgba(255,255,255,0.9);
     width: 100%;
     transition: 0.5s;
@@ -120,11 +120,23 @@ li.nav-lang:hover .dropdown-content {
     border-bottom: 5px;
 }
 
+.nav-icon {
+    display: none;
+}
+.nav-icon a{
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 @media screen and (max-width:680px){
     .bottom-nav {
         height: 60px;
     /*    background: #E6E6E6;*/
-        padding: 20xp;
+        /*padding: 20xp;*/
         background-color: rgba(255,255,255,0.9);
         width: 100%;
         transition: 0.5s;
@@ -144,8 +156,23 @@ li.nav-lang:hover .dropdown-content {
         float: none;
     }
 
+    .nav-list {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top:60px;
+        margin: 0 !important;
+        background-color: #f9f9f9;
+    }
+
+    .nav-open {
+        display: block;
+    }
+
     .nav-list a:hover:not(.active), .active{
-        background-color: #29ABE2;
+        border-bottom: 0px !important;
+        background: #29ABE2;
     }
 
     .nav-list a{
@@ -157,6 +184,15 @@ li.nav-lang:hover .dropdown-content {
         text-transform: uppercase;
         font-weight: 400;
         border-bottom: 5px;
+    }
+    .nav-icon {
+        float: right;
+        display: inline-block;
+        top: 0;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        z-index: 4;
     }
 }
 
@@ -208,14 +244,14 @@ header {
     text-align: center;
 }
 
-    .search {
-        height: 40px;
-        width: 50%;
-        margin: 120px 0px;
-        border-radius: 25px;
-        background: #ffffff;
-        text-align: left;
-    }    
+.search {
+    height: 40px;
+    width: 50%;
+    margin: 120px 0px;
+    border-radius: 25px;
+    background: #ffffff;
+    text-align: left;
+}
 
 @media (min-width:1000px){
     .search {
