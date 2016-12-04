@@ -5,6 +5,7 @@
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <title>Travelpedia - Explore Indonesia</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
     <!--    <link rel="stylesheet" type="text/css" href="css/mobile.css">-->
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 </head>
@@ -28,144 +29,109 @@
             <img class="logo" src="img/logo.png">
         </div>
         <div class="nav-icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNav()">☰</a></div>
-
         <ul class="nav-list" id="bnav">
             <li><a class="active" href="index.html">Beranda</a></li>
             <li><a href="package.html">Paket</a></li>
             <li><a href="about.html">Tentang</a></li>
         </ul>
     </div>
-
 </nav>
 <header>
     <div class="wrap-header">
         <h1 class="title">Traveling Safely</h1>
         <h3 class="subtitle">Ciptakan Liburan Impianmu</h3>
         <div class="search">
-            <input type="text" class="search-input" title="search">
+            <input type="text" class="search-input" title="search" value="Bandung, Jawa Barat">
             <a href="search.html"><button class="search-btn">Search</button></a>
         </div>
     </div>
 </header>
-<section id="trending">
+<section class="search-page">
     <div class="wrapper">
-        <h1 class="section-title">Trending</h1>
-        <span></span>
-        <div class="content">
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
+        <p>Hasil pencarian destinasi di <strong>Bandung</strong></p>
+        <div class="col-4 filter">
+            <div class="card sorting">
+                <h3>Urutkan hasil</h3>
+                <div class="card-content">
+
                 </div>
             </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
+            <div class="card filter">
+                <h3>Saring hasil</h3>
+                <div class="card-content">
+
                 </div>
             </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
+        </div>
+        <div class="col-8 result">
+            <div class="card card-search">
+                <div class="col-4">
+                    <div class="box-3-2 result-pic" style="background-image: url(img/heading.jpg)"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card-info">
+                        <h3>Kawah Putih</h3>
+                        <div class="rating-star">
+                            <div class="rating-star-a"></div>
+                        </div>
+                        <div class="location">Bandung, Jawa Barat</div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="result-price">
+                        <span class="price">Rp250.000</span>
+                        <div class="card-button"><a href="detail-package.html" class="button">Pesan</a></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
+            <div class="card card-search">
+                <div class="col-4">
+                    <div class="box-3-2 result-pic" style="background-image: url(img/heading.jpg)"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card-info">
+                        <h3>Kawah Putih</h3>
+                        <div class="rating-star">
+                            <div class="rating-star-a"></div>
+                        </div>
+                        <div class="location">Bandung, Jawa Barat</div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="result-price">
+                        <span class="price">Rp250.000</span>
+                        <div class="card-button"><a href="detail-package.html" class="button">Pesan</a></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
+            <div class="card card-search">
+                <div class="col-4">
+                    <div class="box-3-2 result-pic" style="background-image: url(img/heading.jpg)"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card-info">
+                        <h3>Kawah Putih</h3>
+                        <div class="rating-star">
+                            <div class="rating-star-a"></div>
+                        </div>
+                        <div class="location">Bandung, Jawa Barat</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
+                <div class="col-3">
+                    <div class="result-price">
+                        <span class="price">Rp250.000</span>
+                        <div class="card-button"><a href="detail-package.html" class="button">Pesan</a></div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
         <div class="clearfix"></div>
     </div>
-</section>
-<section id="discover" class="bg-shade">
-    <div class="wrapper">
-        <h1 class="section-title">Discover</h1>
-        <div class="content">
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="dest-box-mid" style="background-image: url(img/heading.jpg); background-size:cover;">
-                    <div class="desc">
-                        <span>Open your mind</span>
-                        <h3>Bromo</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</section>
-<section id="payment">
-    <div class="wrapper">
-        <h1>Payment</h1>
-        <div class="content">
-        </div>
-    </div>
+
+
 </section>
 <footer>
     <div class="bottom-menu">

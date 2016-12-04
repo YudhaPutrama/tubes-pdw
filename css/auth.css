@@ -1,0 +1,69 @@
+.nav {
+    position: inherit;
+}
+
+.auth-page {
+    background-color: #303843;
+}
+
+.auth-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.auth-section img {
+    max-width: 280px;
+}
+
+.panel-auth {
+    min-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    background: white;
+    margin: 40px 0;
+}
+.panel-auth h1 {
+    size: 1em;
+    font-weight:100;
+}
+
+.panel-auth form {
+    margin: 20px auto;
+    width: 75%;
+    text-align: left;
+}
+
+.panel-auth input[type="text"], .panel-auth input[type="password"] {
+    width: 100%;
+    height: 40px;
+    background: #E6E6E6;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.panel-auth input[type="submit"] {
+    margin: 10px 0;
+    width: 100%;
+    height: 45px;
+    background: #F7931E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.panel-auth p {
+    text-align: center;
+    color: #999999;
+}
+.panel-auth a {
+    color: #069ACE;
+    text-decoration: none;
+}
