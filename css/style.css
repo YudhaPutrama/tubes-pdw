@@ -789,7 +789,7 @@ Panel
     font-family: "Helvetica",Arial,sans-serif;
 }
 .panel-body {
-    padding: 16px 5px 10px 16px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
@@ -803,7 +803,7 @@ Panel
 /*
     TABLET STYLE
  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;

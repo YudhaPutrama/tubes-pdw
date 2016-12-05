@@ -123,3 +123,53 @@
     padding: 10px;
     box-sizing: border-box;
 }
+.comment {
+    min-height: 60px;
+    margin: 20px;
+}
+
+.comment-image {
+    float: left;
+}
+
+.comment-content {
+    margin-left: 100px;
+}
+
+.panel-body img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hotel {
+    text-align: center;
+}
+
+.price {
+    font-weight: 900;
+    color: #F15A24;
+}
+
+.order-btn {
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #F15A24;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.fav-btn {
+
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #F44336;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+
+}

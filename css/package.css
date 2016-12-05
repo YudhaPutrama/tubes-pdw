@@ -87,3 +87,9 @@ Ribbon
 .ribbon-special {
     background-image: url("../img/ribbon-special.png");
 }
+
+@media only screen and (max-width: 960px) {
+    .card-dest {
+        width: 100%;
+    }
+}
