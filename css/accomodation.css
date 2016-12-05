@@ -1,0 +1,43 @@
+.nav {
+    position: inherit;
+}
+
+.auth-page {
+    background-color: #303843;
+}
+
+.auth-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.auth-section img {
+    max-width: 280px;
+}
+
+.panel-acc {
+    min-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    background: white;
+    margin: 40px 20px;
+}
+.panel-acc h1 {
+    size: 1em;
+    font-weight:100;
+}
+
+.panel-acc img {
+
+}
+
+.panel-acc p {
+    text-align: center;
+    color: #999999;
+}
+.panel-acc a {
+    color: #069ACE;
+    text-decoration: none;
+}
