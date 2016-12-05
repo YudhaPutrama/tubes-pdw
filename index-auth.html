@@ -18,11 +18,18 @@
                 </div>
             </li>
             <li class="divider"></li>
-            <li><a href="index-auth.html">Member</a></li>
+            <li><a href="javascript:void(0);" onclick="openMember();">Member</a></li>
             <li><a href="index.html">Logout</a></li>
         </ul>
+        
     </div>
-
+    <div class="member-dropdown">
+        <div class="member-dropdown-content" id="member-drop">
+            <a href="profile.html">Ubah Profil</a>
+            <a href="#">Pesanan Saya</a>
+            <a href="#">Konfirmasi</a>
+        </div>
+    </div>
     <div class="bottom-nav" id="mynav">
         <div class="logo-container">
             <img class="logo" src="img/logo.png">
@@ -288,6 +295,14 @@
             x.className += " nav-open";
         } else {
             x.className = "nav-list";
+        }
+    }
+    
+    function openMember(){
+        if(document.getElementById("member-drop").style.display === "none"){
+            document.getElementById("member-drop").style.display = "block";
+        } else {
+            document.getElementById("member-drop").style.display = "none";
         }
     }
 
