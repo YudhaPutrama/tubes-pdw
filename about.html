@@ -6,6 +6,7 @@
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <title>Travelpedia - Explore Indonesia</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 </head>
 <body>
@@ -30,32 +31,69 @@
         <div class="nav-icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNav()">☰</a></div>
 
         <ul class="nav-list" id="bnav">
-            <li><a class="active" href="index.html">Beranda</a></li>
+            <li><a href="index.html">Beranda</a></li>
             <li><a href="package.html">Paket</a></li>
-            <li><a href="about.html">Tentang</a></li>
+            <li><a class="active" href="about.html">Tentang</a></li>
         </ul>
     </div>
 
 </nav>
 <header>
     <div class="wrap-header">
-        <h1 class="title">Traveling Safely</h1>
-        <h3 class="subtitle">Ciptakan Liburan Impianmu</h3>
-        <div class="search">
-            <input type="text" class="search-input" title="search">
-            <a href="search.html"><button class="search-btn">Search</button></a>
-        </div>
+        <h1 class="title">Tentang Travelpedia</h1>
+        <h3 class="subtitle">Kami disini memudahkan perjalanan anda</h3>
+    </div>
+    <div class="search">
+        <input type="text" class="search-input" title="search">
+        <a href="search.html"><button class="search-btn">Search</button></a>
     </div>
 </header>
 
 <section class="general-layout">
     <div class="wrapper">
-        <div class="layout-title">
-            <h2>About</h2>
-            <p></p>
-        </div>
-        <div class="layout-container">
+        <!--<div class="layout-title">-->
+            <!--<h2>About</h2>-->
+            <!--<p></p>-->
+        <!--</div>-->
+        <div class="layout-container about-page">
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/about/airplane.png">
+                </div>
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>Diskon Eksklusif Tiket Pesawat</h3>
+                        <p>Khusus pelanggan Info Promo, nikmati diskon untuk tiket pesawat dengan 17+ maskapai rute domestik dan internasional.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>Harga Spesial Hotel</h3>
+                        <p>Nikmati harga spesial untuk 15.000+ hotel, mulai dari hotel budget hingga bintang 5 di seluruh Indonesia, Singapore, Malaysia, Thailand, Vietnam, Hong Kong, dan Filipina.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="img/about/hotel.png">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/about/free.png">
+                </div>
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>Gratis dan Mudah</h3>
+                        <p>Berlangganan tidak dipungut biaya. Anda cukup mendaftarkan email untuk mulai menerima Info Promo. Anda juga dapat berhenti berlangganan kapan saja.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
 
+            <div class="clearfix"></div>
         </div>
     </div>
 </section>
@@ -78,6 +116,18 @@
     </div>
     <span class="copy">Copyright &copy; 2016 Copyright Holder All Rights Reserved.</span>
 </footer>
+<div style="display: none">
+    <img src="img/header/heading1.jpg">
+    <img src="img/header/heading2.jpg">
+    <img src="img/header/heading3.jpg">
+    <img src="img/header/heading4.jpg">
+    <img src="img/header/heading5.jpg">
+    <img src="img/header/heading6.jpg">
+    <img src="img/header/heading7.jpg">
+    <img src="img/header/heading8.jpg">
+    <img src="img/header/heading9.jpg">
+    <img src="img/header/heading10.jpg">
+</div>
 <script>
     window.onscroll = function(){
         if(document.body.scrollTop >400 || document.documentElement.scrollTop > 400){

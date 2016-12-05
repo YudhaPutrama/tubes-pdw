@@ -117,3 +117,9 @@
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
+.panel-destination img {
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,10 +1,168 @@
+<!--TODO: Edit Content-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Travelpedia - Explore Indonesia</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 </head>
 <body>
+<nav class="nav">
+    <div class="top-nav">
+        <ul class="tnav">
+            <li class="nav-lang dropdown"><a class="dropbtn">IDR</a>
+                <div class="dropdown-content">
+                    <a href="#">EN</a>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li><a href="register.html">Daftar</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
 
+    <div class="bottom-nav" id="mynav">
+        <div class="logo-container">
+            <img class="logo" src="img/logo.png">
+        </div>
+        <div class="nav-icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNav()">☰</a></div>
+
+        <ul class="nav-list" id="bnav">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="package.html">Paket</a></li>
+            <li><a class="active" href="about.html">Tentang</a></li>
+        </ul>
+    </div>
+
+</nav>
+<header>
+    <div class="wrap-header">
+        <h1 class="title">Pembayaran</h1>
+        <h3 class="subtitle">Sistem Pembayaran yang lengkap</h3>
+    </div>
+    <div class="search">
+        <input type="text" class="search-input" title="search">
+        <a href="search.html"><button class="search-btn">Search</button></a>
+    </div>
+</header>
+
+<section class="general-layout">
+    <div class="wrapper">
+        <!--<div class="layout-title">-->
+        <!--<h2>About</h2>-->
+        <!--<p></p>-->
+        <!--</div>-->
+        <div class="layout-container about-page">
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/payment.png">
+                </div>
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>Pembayaran lewat berbagai bank</h3>
+                        <p>Pembayaran dapat dilakukan kapanpun dan dimanapun. Baik secara online atau lewat teller</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>All for you</h3>
+                        <p>Dapat menggunakan pembayaran lewat kartu kredit Master Card dan Visa</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="img/credit-payment.png">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/mart-payment.png">
+                </div>
+                <div class="col-8">
+                    <div class="about-component">
+                        <h3>Dimana saja</h3>
+                        <p>Dapat melakukan pembayaran di Alfamart dan Indomart</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="bottom-menu">
+        <ul>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="social">
+        <ul>
+            <li><a href="https://www.facebook.com/travelpedia"><img src="img/social/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/travelpedia"><img src="img/social/instagram.png"></a></li>
+            <li><a href="https://www.youtube.com/c/travelpedia"><img src="img/social/youtube.png"></a></li>
+        </ul>
+    </div>
+    <span class="copy">Copyright &copy; 2016 Copyright Holder All Rights Reserved.</span>
+</footer>
+<div style="display: none">
+    <img src="img/header/heading1.jpg">
+    <img src="img/header/heading2.jpg">
+    <img src="img/header/heading3.jpg">
+    <img src="img/header/heading4.jpg">
+    <img src="img/header/heading5.jpg">
+    <img src="img/header/heading6.jpg">
+    <img src="img/header/heading7.jpg">
+    <img src="img/header/heading8.jpg">
+    <img src="img/header/heading9.jpg">
+    <img src="img/header/heading10.jpg">
+</div>
+<script>
+    window.onscroll = function(){
+        if(document.body.scrollTop >400 || document.documentElement.scrollTop > 400){
+            document.getElementById("mynav").style.position = "fixed";
+            document.getElementById("mynav").style.top = "0px";
+        } else if(document.body.scrollTop >100 || document.documentElement.scrollTop > 100){
+            document.getElementById("mynav").style.position = "fixed";
+            document.getElementById("mynav").style.top = "-60px";
+        } else {
+//            console.log("Uncrolled");
+            document.getElementById("mynav").style.top = "inherit";
+            document.getElementById("mynav").style.position = "absolute";
+        }
+    }
+
+    function responsiveNav() {
+        var x = document.getElementById("bnav");
+        if (x.className === "nav-list") {
+            x.className += " nav-open";
+        } else {
+            x.className = "nav-list";
+        }
+    }
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+
+
+</script>
 </body>
 </html>
