@@ -66,3 +66,82 @@ Card
     text-transform: uppercase;
     color: white;
 }
+
+.form-group {
+    margin-top: 10px;
+}
+
+input[type="radio"]:not(old){
+    width: 22px;
+    margin: 0;
+    padding:0;
+    opacity: 0;
+}
+
+input[type="radio"]:not(old) + label {
+    display: inline-block;
+    margin-left: -22px;
+    padding-left: 26px;
+    line-height: 22px;
+    background: url("../img/radio.png") no-repeat 0 0;
+}
+input[type="radio"]:not(old):checked + label {
+    background-position: 0 -22px;
+}
+
+.range-box {
+    margin: 10px 0;
+}
+
+.range-box input[type="text"] {
+    padding: 10px 12px;
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    background-color: #dadada;
+}
+
+.range-box input[type="text"].start {
+    float: left;
+}
+.range-box input[type="text"].end {
+    float: right;
+}
+
+.range-slider {
+    position: relative;
+    height: 22px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.slider-line {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #444444;
+    height: 8px;
+    box-sizing: border-box;
+    top: 10px;
+    left: 0;
+    padding: 0 11px;
+}
+.slider-line .sactive{
+    position: absolute;
+    z-index: 1;
+    border-radius: 4px;
+    background-color: #0C7CD2;
+    height: 8px;
+    width: 50%;
+}
+.slider-start, .slider-end {
+    position: absolute;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    top:3px;
+    cursor: pointer;
+    background-image: url("../img/checked.png");
+}
